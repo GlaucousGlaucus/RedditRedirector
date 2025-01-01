@@ -6,7 +6,7 @@
       "type": "redirect",
       "redirect": {
         "transform": {
-          "host": "old.reddit.com"
+          "host": "ww.reddit.com"
         }
       }
     },
