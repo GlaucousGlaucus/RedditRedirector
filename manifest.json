@@ -1,0 +1,21 @@
+{
+  "name": "Reddit Redirect",
+  "description": "Redirects all new reddit sites to old reddit.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "icon2.png"
+  },
+  "permissions": ["webRequest", "webRequestBlocking", "declarativeNetRequest"],
+  "host_permissions": ["*://www.reddit.com/*"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
